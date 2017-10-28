@@ -25,10 +25,26 @@
         android:layout_height="wrap_content"
         android:text="Save File from edit text content."
         app:layout_constraintTop_toBottomOf="@+id/text_save_target" />
+
     <Button
-        android:id="@+id/read"
+        android:id="@+id/read_file"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save File from edit text content."
-        app:layout_constraintTop_toBottomOf="@+id/text_save_target" />
+        android:text="Read file."
+        app:layout_constraintTop_toBottomOf="@+id/save_file" />
+
+    <TextView
+        android:id="@+id/label_read_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File content"
+        app:layout_constraintTop_toBottomOf="@+id/read_file" />
+
+    <TextView
+        android:id="@+id/text_read_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content"
+        app:layout_constraintTop_toBottomOf="@+id/label_read_result" />
+
 </android.support.constraint.ConstraintLayout>

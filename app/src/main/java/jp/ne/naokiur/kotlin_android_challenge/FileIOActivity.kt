@@ -17,5 +17,14 @@ class FileIOActivity : AppCompatActivity() {
             File(baseContext.filesDir, "sample.txt").appendText(target)
             text_save_target.text.clear()
         }
+
+        read_file.setOnClickListener {
+            readFile()
+        }
+
+    }
+
+    fun readFile() {
+        text_read_result.text = "After Read by other function"
     }
 }
