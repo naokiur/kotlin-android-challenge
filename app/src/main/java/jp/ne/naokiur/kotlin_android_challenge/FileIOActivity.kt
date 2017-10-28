@@ -25,7 +25,7 @@ class FileIOActivity : AppCompatActivity() {
     }
 
     private fun readFile() {
-        var result: String = ""
+        var result = ""
         File(baseContext.filesDir, "").walkTopDown().forEach {
             if (it.isDirectory) {
                 result += it.absolutePath + "\n"
