@@ -25,6 +25,16 @@ class FileIOActivity : AppCompatActivity() {
     }
 
     private fun readFile() {
-        text_read_result.text = "After Read by other function"
+        var result: String = ""
+        File(baseContext.filesDir, "").walkTopDown().forEach {
+            if (it.isDirectory) {
+                result += it.absolutePath + "\n"
+
+            } else if (it.isFile) {
+                result += "\t" + it.name + "\n"
+            }
+        }
+
+        text_read_result.text = result
     }
 }
