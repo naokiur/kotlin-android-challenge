@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NetworkActivity"></activity>
+        <activity android:name=".NetworkActivity" />
+        <activity android:name=".FileIOActivity"></activity>
     </application>
 
 </manifest>

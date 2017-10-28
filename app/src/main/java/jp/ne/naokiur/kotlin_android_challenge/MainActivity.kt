@@ -15,5 +15,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(baseContext, NetworkActivity::class.java)
             startActivity(intent)
         }
+
+        file_io.setOnClickListener { view ->
+            val intent = Intent(baseContext, FileIOActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
