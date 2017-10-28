@@ -11,7 +11,7 @@ class FileIOActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_file_io)
 
-        save.setOnClickListener {
+        save_file.setOnClickListener {
             val target: String = text_save_target.text.toString() + "\n"
 
             File(baseContext.filesDir, "sample.txt").appendText(target)

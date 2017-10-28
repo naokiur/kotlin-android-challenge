@@ -20,7 +20,13 @@
         app:layout_constraintTop_toBottomOf="@+id/label_save_target" />
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/save_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save File from edit text content."
+        app:layout_constraintTop_toBottomOf="@+id/text_save_target" />
+    <Button
+        android:id="@+id/read"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save File from edit text content."
