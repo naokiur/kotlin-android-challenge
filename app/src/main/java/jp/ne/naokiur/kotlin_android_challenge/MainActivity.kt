@@ -11,7 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        connect_network.text = getString(R.string.button_network_label)
         connect_network.setOnClickListener { view ->
             val intent = Intent(baseContext, NetworkActivity::class.java)
             startActivity(intent)
