@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">kotlin-android-challenge</string>
+    <string name="button_network_label">Set text from MainActivity!!</string>
 </resources>
