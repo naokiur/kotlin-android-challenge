@@ -24,7 +24,7 @@ class FileIOActivity : AppCompatActivity() {
 
     }
 
-    fun readFile() {
+    private fun readFile() {
         text_read_result.text = "After Read by other function"
     }
 }
