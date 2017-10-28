@@ -6,6 +6,9 @@ import kotlinx.android.synthetic.main.activity_file_io.*
 import java.io.File
 
 class FileIOActivity : AppCompatActivity() {
+    // できない
+    // https://stackoverflow.com/questions/44637435/how-to-use-fragments-with-kotlin
+    // private var fragment: DirectoryTreeFragment? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,16 +28,9 @@ class FileIOActivity : AppCompatActivity() {
     }
 
     private fun readFile() {
-        var result = ""
-        File(baseContext.filesDir, "").walkTopDown().forEach {
-            if (it.isDirectory) {
-                result += it.absolutePath + "\n"
+        // できない
+//        fragment = Fragment.instantiate(baseContext, DirectoryTreeFragment::class.java!!.name) as DirectoryTreeFragment
+//        fragmentManager.beginTransaction().replace(R.id.directory_tree, fragment).commit()
 
-            } else if (it.isFile) {
-                result += "\t" + it.name + "\n"
-            }
-        }
-
-        text_read_result.text = result
     }
 }
