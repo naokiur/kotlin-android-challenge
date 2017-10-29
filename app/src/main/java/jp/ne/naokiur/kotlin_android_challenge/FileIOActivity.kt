@@ -28,9 +28,7 @@ class FileIOActivity : AppCompatActivity() {
     }
 
     private fun readFile() {
-        // できない
-//        fragment = Fragment.instantiate(baseContext, DirectoryTreeFragment::class.java!!.name) as DirectoryTreeFragment
-//        fragmentManager.beginTransaction().replace(R.id.directory_tree, fragment).commit()
-
+        val dialog = DirectoryDialog()
+        dialog.show(fragmentManager, "tag")
     }
 }
