@@ -10,10 +10,10 @@ import android.os.Bundle
  * Created by nao-ur on 2017/10/29.
  */
 class DirectoryDialog: DialogFragment() {
-    val title = "title"
-    val msg = "message"
-    val okText = "OK"
-    val cancel ="Cancel"
+    private val title = "title"
+    private val msg = "message"
+    private val okText = "OK"
+    private val cancel ="Cancel"
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val builder = AlertDialog.Builder(activity)
