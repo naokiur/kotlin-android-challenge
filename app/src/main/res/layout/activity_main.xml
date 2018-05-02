@@ -27,5 +27,11 @@
         android:layout_height="wrap_content"
         android:text="File I/O"
         app:layout_constraintTop_toBottomOf="@+id/connect_network" />
+    <Button
+        android:id="@+id/change_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change!"
+        app:layout_constraintTop_toBottomOf="@+id/file_io" />
 
 </android.support.constraint.ConstraintLayout>

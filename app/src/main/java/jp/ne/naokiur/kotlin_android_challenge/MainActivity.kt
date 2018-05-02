@@ -20,5 +20,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(baseContext, FileIOActivity::class.java)
             startActivity(intent)
         }
+
+        change_text.setOnClickListener { view ->
+            HelloWorld.text = "change!"
+        }
     }
 }
